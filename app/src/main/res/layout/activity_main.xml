@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raad"
+        android:id="@+id/raadKnop"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginTop="130dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/invoerVeld"
+        android:layout_above="@+id/newgameKnop"
+        android:layout_alignLeft="@+id/raadKnop"
+        android:layout_alignStart="@+id/raadKnop"
+        android:layout_toLeftOf="@+id/newgameKnop"
+        android:layout_toStartOf="@+id/newgameKnop" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nieuw spel"
+        android:id="@+id/newgameKnop"
+        android:layout_alignBottom="@+id/raadKnop"
+        android:layout_toRightOf="@+id/raadKnop"
+        android:layout_toEndOf="@+id/raadKnop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/uitvoerVeld"
+        android:layout_below="@+id/raadKnop"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginTop="74dp" />
+
+</RelativeLayout>
